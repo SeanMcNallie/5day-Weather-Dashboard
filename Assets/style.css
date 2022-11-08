@@ -1,0 +1,58 @@
+.container {
+    border: 1px solid black;
+    padding: 1rem;
+    min-height: auto;
+}
+
+header {
+    display: block;
+    /* justify-content: space-between;
+    align-items: center; */
+    padding: 20px;
+    background: rgb(19,41,61);
+    background: linear-gradient(90deg, rgba(19,41,61,1) 50%, rgba(19,19,99,1) 81%, rgba(18,29,75,1) 98%);
+    color: #fff;
+    font-size: 100%;
+    font-weight: bold;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weather {
+    border: 1px solid black;
+    margin-top: 1rem;
+}
+
+.col-4 {
+    margin-top: 1rem;
+}
+
+.col-2 {
+    flex: auto;
+    background-color: rgb(38, 94, 159);
+    margin: 1rem;
+    color: #fff;
+}
+
+.day1 {
+        flex: auto;
+        background-color: rgb(38, 94, 159);
+        margin: 1rem;
+        color: #fff;
+    }
+
+.container1 {
+    margin: 1rem;
+}
+
+.cityname {
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 150%;
+}
+.city-name {
+    padding: 10px;
+    font-size: large;
+}

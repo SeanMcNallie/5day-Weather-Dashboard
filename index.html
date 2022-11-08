@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <link rel="stylesheet" href="./Assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--Header-->
+      <header>
+        <h1>5 Day Weather Dashboard</h1>
+      </header>
+      <main>
+        <!--Search Container with button-->
+        <div class="row">
+            <div class="col-4">
+                <h3>Search for a City</h3>
+                <p id="cityInputContainer">City: <input type="text" id="cityInput"</p>
+                <button id="search-btn">Search</button>   
+                <br>
+                <h4>Saved Cities:</h4>
+                <br>
+                <!--I think I need a container for the saved cities-->
+                <div id="savedCities"></div>
+            </div>
+         
+            <div class="weather col-8" >
+              <div class="day1" id="day1"></div>
+
+            
+                <div class="row" id="four-day">
+               <!--Moved 4 smaller containers to js-->
+               <!--<div class="weather col-2" id="day3">
+                    <img class="imgClass" id="weatherIcon3" src=""></img>
+                    <p class="container3">Temperature:
+                        <span id="tempDay3">--</span>
+                      </p>
+                      <p class="container3">Humidity:
+                        <span id="humidityDay3">--</span>
+                      </p>
+                      <p class="container3">Wind Speed:
+                        <span id="windSpeedDay3">--</span>
+                      </p>
+                </div>
+                <div class="weather col-2" id="day4">
+                    <img class="imgClass" id="weatherIcon4" src=""></img>
+                    <p class="container4">Temperature:
+                        <span id="tempDay4">--</span>
+                      </p>
+                      <p class="container4">Humidity:
+                        <span id="humidityDay4">--</span>
+                      </p>
+                      <p class="container4">Wind Speed:
+                        <span id="windSpeedDay4">--</span>
+                      </p>
+                </div>
+                <div class="weather col-2" id="day5">
+                    <img class="imgClass" id="weatherIcon5" src=""></img>
+                    <p class="container5">Temperature:
+                        <span id="tempDay5">--</span>
+                      </p>
+                      <p class="container5">Humidity:
+                        <span id="humidityDay5">--</span>
+                      </p>
+                      <p class="container5">Wind Speed:
+                        <span id="windSpeedDay5">--</span>
+                      </p>--> 
+                </div>
+            </div>
+           
+        </div>
+        </div>
+     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Assets/script.js"></script>
+  </body>
+</html>
